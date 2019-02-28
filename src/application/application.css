@@ -1,0 +1,141 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.tool-bar
+{
+	-fx-background: -fx-accent;
+    -fx-background-color: darkred; 
+    -fx-text-fill: -fx-selection-bar-text;
+    
+    -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:  0  0 2px 0 ;
+    
+}
+
+#Ayarlar
+{
+	-fx-background: -fx-accent;
+    -fx-background-color:darkred;
+ 
+    -fx-text-fill:white;
+}
+
+#menubuton
+{
+	/*fx-background: -fx-accent;*/
+    -fx-background-color: darkred;
+  
+     -fx-text-fill:white;
+}
+#btnFavoriKaydet
+{
+	/*fx-background: -fx-accent;*/
+    -fx-background-color: darkred;
+  
+    -fx-text-fill:white;
+}
+#Ayarlar:hover
+{
+	-fx-background-color:firebrick;
+	-fx-text-fill:black;
+	-fx-background-radius:10px;
+
+}
+#menubuton:hover
+{
+	-fx-background-color:firebrick;
+	-fx-text-fill:black;
+	
+	-fx-background-radius:10px;
+	
+}
+#btnFavoriKaydet:hover
+{
+	-fx-background-color:firebrick;
+	-fx-text-fill:black;
+	-fx-background-radius:10px;
+	
+}
+.tab
+{	
+	
+  -fx-background-radius:10px;
+	-fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:1px;
+ -fx-border-radius:10px;
+ 
+ -fx-font-weight:bold;
+
+}
+
+#txtAdres0
+{
+-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+ -fx-font-weight:bold;
+}
+#btnGeri0
+{
+-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+}
+
+#btnileri0
+{
+-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+}
+
+#btnGit0
+{
+-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+}
+
+#btnYenile0
+{
+-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+}
+
+
+#BtnGecmisSil
+{
+	-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+}
+
+#BtnFvrSil
+{
+	-fx-background-radius:10px;
+ -fx-border-color:black;
+ -fx-border-style: solid;
+ -fx-border-width:2px;
+ -fx-border-radius:10px;
+}
+
+.table-view
+{
+	
+	-fx-font-weight:bold;
+
+}

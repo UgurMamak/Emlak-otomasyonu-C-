@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="AnaPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TarayiciController">
+   <children>
+      <TabPane fx:id="AnaSekme" layoutX="84.0" layoutY="30.0" prefHeight="570.0" prefWidth="600.0" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+        <tabs>
+          <Tab fx:id="tbsekme0" text="Yeni Sekme">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtAdres0" layoutX="151.0" layoutY="15.0" onAction="#TxtEnter" prefHeight="25.0" prefWidth="353.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="65.0" />
+                        <Button fx:id="btnGeri0" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BtnGeri" prefHeight="33.0" prefWidth="40.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../foto/geri24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="btnileri0" layoutX="60.0" layoutY="14.0" mnemonicParsing="false" onAction="#Btnileri" prefHeight="32.0" prefWidth="42.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="14.0">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../foto/ileri24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="btnGit0" layoutX="1217.0" layoutY="15.0" mnemonicParsing="false" onAction="#BtnGit" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../foto/git24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="btnYenile0" layoutX="106.0" layoutY="14.0" mnemonicParsing="false" onAction="#BtnYenile" prefHeight="34.0" prefWidth="41.0" AnchorPane.leftAnchor="106.0" AnchorPane.topAnchor="14.0">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../foto/yenile24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <WebView fx:id="ViewSayfa0" layoutX="172.0" layoutY="183.0" prefHeight="493.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ToolBar layoutY="-3.0" prefHeight="35.0" prefWidth="600.0" stylesheets="@application.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="Ayarlar" mnemonicParsing="false" onAction="#AyarlarAc" prefHeight="33.0" prefWidth="108.0" text="Ayarlar">
+               <graphic>
+                  <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../foto/ayarlar24.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <MenuButton fx:id="menubuton" mnemonicParsing="false" prefHeight="33.0" prefWidth="118.0" text="Favoriler">
+               <graphic>
+                  <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../foto/star24.png" />
+                     </image>
+                  </ImageView>
+               </graphic></MenuButton>
+            <Button fx:id="btnFavoriKaydet" mnemonicParsing="false" onAction="#btnFavoriEkle" prefHeight="33.0" prefWidth="108.0" text="Favori Ekle">
+               <graphic>
+                  <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../foto/frvr32.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label fx:id="lblZaman" text="Label" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
